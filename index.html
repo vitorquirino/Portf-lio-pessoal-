@@ -1,37 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
-    <title>blog pessoal</title>
+    <title>
+        Portifolio pessoal
+    </title>
 </head>
+
 <body>
-    <div class="about-me-header">
-        <img class="avatar" src="imagens/mi-with-my-friends.png" alt="avatar-meu-em-fornmato-Ghibli">
-        <div class="infos">
-             <h1>Vitor quirino</h2> <br>
-             <p>Desenvolvedor Front-end</p>
+    <nav class="nagevacao">
+        <ul class="menu">
+            <li>
+                <a href="#Inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="#Sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#Projetos">Projetos</a>
+            </li>
+            <li>
+                <a href="#Contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="Inicio" class="cabecalho">
+        <div>
+            <img src="imagens/mi-with-my-friends.png">
+            <h1>Vitor quirino</h1>
+            <p>Programador Front-end</p>
         </div>
-        <div class="linha">
-            <hr>
-            
+    </main>
+    <section id="Sobre" class="Sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá, sou um estudante de análise e desenvolvimento de sistemas
+                pela uninter, apaixonado por tecnologia,sempre em busca de novas
+                experiência!
+            </p>
         </div>
-        
-        <ul class="list">
-            <li><a href="">Sobre mim</a></li>
-            <li><a href="">Minhas formações</a></li>
-            <li><a href="">Portifólio</a></li>
-            <li><a href="">Contato</a></li>
-        </ul>  
-    </div>
-    <div class="my-infos">
-        <h1> <a href=""> Sobre mimm!</a></h1>
-        <p>Olá, sou um estudante de Análise e Desenvolvimento de Sistemas,
-            apaionado por Programação e Tecnologia, e sempre em busca de novas experiências!
-        </p>
-    </div>
-    
-    
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="" alt="">
+                <h3 class="info-projetos">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <p class="paragrafo-projetos">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Nisi debitis quaerat alias? Voluptatibus
+                    fugiat ducimus minus illum odit, quis tempore.
+                </p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="" alt="">
+                <h3 class="info-projetos">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <p class="paragrafo-projetos">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Nisi debitis quaerat alias? Voluptatibus
+                    fugiat ducimus minus illum odit, quis tempore.
+                </p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="" alt="">
+                <h3 class="info-projetos">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <p class="paragrafo-projetos">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Nisi debitis quaerat alias? Voluptatibus
+                    fugiat ducimus minus illum odit, quis tempore.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario">
+            <div class="nome-form">
+                <input placeholder="Nome" class="campo-form">
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+            </div>
+
+        </form>
+    </section>
 </body>
+
 </html>
