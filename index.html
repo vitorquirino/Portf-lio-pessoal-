@@ -8,31 +8,33 @@
     <title>
         Portifolio pessoal
     </title>
+    <script src="javascript/script.js"></script>
 </head>
 
 <body>
-    <nav class="nagevacao">
+    <div class="particulas">
+
+    </div>
+    <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#Inicio">Inicio</a>
+                <a href="#Inicio" class="menu-link">Inicio</a>
             </li>
             <li>
-                <a href="#Sobre">Sobre</a>
+                <a href="#Sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#Projetos">Projetos</a>
+                <a href="#Projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#Contato">Contato</a>
+                <a href="#Contato" class="menu-link">Contato</a>
             </li>
         </ul>
     </nav>
     <main id="Inicio" class="cabecalho">
-        <div>
-            <img src="imagens/mi-with-my-friends.png">
-            <h1>Vitor quirino</h1>
-            <p>Programador Front-end</p>
-        </div>
+        <img src="imagens/perfil.png" class="foto-perfil">
+        <h1>Vitor quirino</h1>
+        <p class="cabecalho-sub-titulo">Programador Front-end</p>
     </main>
     <section id="Sobre" class="Sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
@@ -45,57 +47,63 @@
         </div>
     </section>
 
-    <section id="projetos" class="projetos">
+    <section id="Projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
 
             <div class="projetos-card">
-                <img src="" alt="">
-                <h3 class="info-projetos">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="paragrafo-projetos">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.
-                    Nisi debitis quaerat alias? Voluptatibus
-                    fugiat ducimus minus illum odit, quis tempore.
-                </p>
+                <img src="imagens/projeto-academia.png" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Página de academia</h3>
+                    <p class="paragrafo-projetos">
+                        Uma landing page simples para uma academia, usei apenas html e css!
+                        fiz sozinhoo, apenas para testar meus conhecimentos de front-end
+                    </p>
+                </div>
+
             </div>
 
             <div class="projetos-card">
-                <img src="" alt="">
-                <h3 class="info-projetos">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <img src="imagens/projeto-hdchost.png" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                <h3 class="info-projetos">Página de hospedagem de sites</h3>
                 <p class="paragrafo-projetos">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.
-                    Nisi debitis quaerat alias? Voluptatibus
-                    fugiat ducimus minus illum odit, quis tempore.
+                    landig-page de um site de hospedagem, que fiz apenas o front-end,
+                    acabei não dando procedimento ao back-end, mas aqui minha ideia foi um pouco melhor
                 </p>
+                </div>
             </div>
 
             <div class="projetos-card">
-                <img src="" alt="">
-                <h3 class="info-projetos">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <img src="imagens/projeto-instagram.png" class="projetos-imagem">
+                 <div class="caixa-texto-projeto">
+                <h3 class="info-projetos">Clone da página do instagram.</h3>
                 <p class="paragrafo-projetos">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.
-                    Nisi debitis quaerat alias? Voluptatibus
-                    fugiat ducimus minus illum odit, quis tempore.
+                    Apenas um clone da página de login do instagram, que fiz no curso da udemy!
                 </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Contatos</h2>
-        <form class="formulario-contato" id="formulario">
+    <section id="Contato" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="(enviarWhats(event))">
             <div class="nome-form">
-                <input placeholder="Nome" class="campo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
-            <div class="grupo-form">
-                <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+            <div class="nome-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem"
+                 rows="4" id="mensagem"></textarea>
             </div>
-
+            <button type="submit" class="botao-form">Enviar whatsapp</button>
         </form>
     </section>
+
+    
 </body>
+
+
+
 
 </html>
